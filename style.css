@@ -1,0 +1,61 @@
+/* Общие настройки */
+body {
+  font-family: 'Unbounded', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Логотип */
+.logo-container {
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Инструкция */
+.instructions {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Кнопка */
+.sphere-button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6aa84f; /* Приглушенный салатовый */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sphere-button:active {
+  background-color: #e69138; /* Приглушенный лососевый */
+}
+
+/* Вывод сферы */
+.sphere-output {
+  font-size: 28px;
+  color: #4a86e8; /* Приглушенный синий */
+  margin-top: 40px;
+  display: none;
+}
+
+/* Инструкция по ассоциациям */
+.association-instruction {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+  display: none;
+}
