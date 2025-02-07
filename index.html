@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Игра в ассоциации</title>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap" rel="stylesheet">
+  <title>Ассоциации по сферам</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Логотип -->
-  <div class="logo-container">
+  <div class="container">
     <img src="logo.png" alt="Логотип" class="logo">
+    <p class="instruction">Нажми кнопку, чтобы выбрать сферу.</p>
+    <button id="sphereButton">Кнопка!</button>
+    <div id="sphereDisplay"></div>
+    <div id="taskMessage"></div>
   </div>
-
-  <!-- Основной контент -->
-  <div class="content">
-    <h1 class="instructions">Нажми кнопку, чтобы выбрать сферу.</h1>
-    <button id="sphereButton" class="sphere-button">Кнопка!</button>
-    <div id="sphereOutput" class="sphere-output"></div>
-    <div id="associationInstruction" class="association-instruction"></div>
-  </div>
-
   <script src="script.js"></script>
 </body>
 </html>

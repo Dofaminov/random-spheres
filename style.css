@@ -1,61 +1,63 @@
-/* Общие настройки */
 body {
   font-family: 'Unbounded', sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
+  background-color: #f0f0f0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
-/* Логотип */
-.logo-container {
-  margin-bottom: 20px;
-}
-.logo {
-  max-width: 150px;
-  height: auto;
-}
-
-/* Инструкция */
-.instructions {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Кнопка */
-.sphere-button {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 30px;
-  border: none;
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
   border-radius: 10px;
-  background-color: #6aa84f; /* Приглушенный салатовый */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sphere-button:active {
-  background-color: #e69138; /* Приглушенный лососевый */
+.logo {
+  width: 80px; /* Уменьшенный размер лого */
+  margin-bottom: 20px;
 }
 
-/* Вывод сферы */
-.sphere-output {
-  font-size: 28px;
-  color: #4a86e8; /* Приглушенный синий */
-  margin-top: 40px;
-  display: none;
-}
-
-/* Инструкция по ассоциациям */
-.association-instruction {
-  font-size: 20px;
+.instruction {
+  font-size: 18px;
   color: #333;
-  margin-top: 20px;
-  display: none;
+  margin-bottom: 20px;
+  font-weight: 800; /* ExtraBold */
+}
+
+button {
+  background-color: #98fb98; /* Приглушенный салатовый */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px; /* Закругленные углы */
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 800; /* ExtraBold */
+}
+
+button:active {
+  background-color: #fa8072; /* Приглушенный лососевый */
+}
+
+#sphereDisplay {
+  font-size: 42px; /* Чуть больше размер шрифта */
+  color: #4682b4; /* Приглушенный синий */
+  margin: 40px 0; /* Большой отступ */
+  font-weight: 800; /* ExtraBold */
+  opacity: 0; /* Изначально скрыто */
+  transition: opacity 0.5s;
+}
+
+#taskMessage {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px; /* Отступ */
+  font-weight: 800; /* ExtraBold */
+  opacity: 0; /* Изначально скрыто */
+  transition: opacity 0.5s;
 }
